@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for demonstration purposes */
+.v_container {
+  display: flex;
+  background-color: blue;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.v_box {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: brown;
+  margin: 30px;
+  
+}
+
+.v_content {
+  background-color: lightblue;
+  height: 100%;
+}
+    </style>
+  </head>
+  <body class="container">
+    <h1 class="text-center fw-bold">CSS</h1>
+    <h1>defenation</h1>
+    <p class="fs-5">
+      CSS is a style sheet language used for describing the look and formatting
+      of a document written in a markup language like HTML. It enables 
+      developers to control the layout, colors, fonts, spacing, and other visual
+      aspects of web pages.
+    </p>
+    <h1>how does css work</h1>
+    <p>CSS works by targeting HTML elements and applying styles to them. To apply styles, you use selectors to target specific HTML elements these selector are as tagname,class,id or other attributes, and then define the appearance properties for those elements.</p>
+    <h1>css syntax :</h1>
+    <pre class="fw-bold fs-4 text-danger">selector {
+        property: value;
+        /* more properties and values */
+    }</pre>
+    <h1>types of stylesheet</h1>
+    <ul><li>
+        <h3 class="text-primary">inline</h3>
+        <p>Inline styles are applied directly to individual HTML elements using the style attribute.</p>
+        <pre class="text-danger fw-bold fs-4">
+<"p style="color: blue; font-size: 16px;">This is a paragraph with inline styles.</"p>
+        </pre>
+    </li>
+    <li>
+        <h3 class="text-primary">internal</h3>
+        <p>Internal styles are defined within the <"style> tag in the <"head> section of an HTML document.</p>
+        <h5>syntax</h5>
+        <pre class="fw-bold fs-4 text-danger">
+    <"head>
+            <"style>
+                p {
+                    color: blue;
+                    font-size: 16px;
+                }
+            </"style>
+     <"/head>
+    </pre>
+    </li>
+    <li>
+        <h3 class="text-primary">external</h3>
+        <p>External stylesheets are separate files with a .css extension that contain CSS rules and are linked to an HTML document using the <"link> tag.</p>
+        <h5>syntax</h5>
+        <pre class="fw-bold fs-4 text-danger"><"link rel="stylesheet" href="styles.css"></pre>
+    </li></ul>
+    <h1>define css propery</h1>
+    <p class="fw-bold">
+         a CSS property refers to an attribute or characteristic that can be applied to HTML elements to define their appearance, layout, or behavior on a webpage
+    </p>
+     <h1>deine class and id </h1>
+     <ul>
+        <li>
+            <h1>class</h1>
+            <p class="text-primary">a class is a selector that allows you to apply a style to one or multiple HTML elements. Classes are defined in CSS using a period (.) followed by the class name.</p>
+        </li>
+        <li>
+            <h1>id</h1>
+            <p class="text-primary"> an ID is a selector used to uniquely identify a single HTML element on a web page. IDs are defined in CSS using the pound sign (#) followed by the ID name.</p>
+        </li>
+     </ul>
+      
+    <h1>use of id and classes in CSS</h1>
+    <ul>
+        <li>
+            <h1>Id</h1>
+            <h3>usage of id</h3>
+            <ul>
+                <li>
+                    <p class="text-success fs-5">IDs are used to uniquely identify a single HTML element on a page. Each ID should be unique within the HTML document.</p>
+                </li>
+                <li>
+                    <p class="text-success fs-5">They are often used when you want to apply specific styles to a single element.</p>
+                </li>
+                <li>
+                    <p class="text-success fs-5">IDs are particularly useful for targeting a specific element for JavaScript manipulation</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h1>class</h1>
+            <h3>usage of class</h3>
+            <ul>
+                <li>
+                    <p class="text-success fs-5">Classes are used to apply styles to multiple HTML elements that share the same class attribute.</p>
+                </li>
+                <li>
+                    <p class="text-success fs-5">Unlike IDs, classes can be applied to multiple elements on the same page</p>
+                </li>
+                <li>
+                    <p class="text-success fs-5">They're commonly used for styling groups of elements that have similar characteristics or need consistent styling.</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h1>background properties in CSS</h1>
+    <ul>
+        <li>
+            <h1>background-color</h1>
+            <p> Sets the background color of an element. You can use color names, hexadecimal values, RGB, or RGBA values</p>
+        </li>
+        <li>
+            <h1>background-image</h1>
+            <p> Specifies an image to be used as the background. You can use url() to link to an image file.</p>
+        </li>
+        <li>
+            <h1>background-repeat</h1>
+            <p> Defines how a background image should be repeated, such as repeat, repeat-x, repeat-y, or no-repeat.</p>
+        </li>
+        <li>
+            <h1>background-position</h1>
+            <p>Sets the initial position of a background image. Values like center, top, bottom, left, right, or specific lengths/percentages can be used.</p>
+        </li>
+        <li>
+            <h1>background-size</h1>
+            <p>Specifies the size of the background image. You can set it to cover, contain, specific lengths, or percentages.</p>
+        </li>
+        <li>
+            <h1>background-attachment</h1>
+            <p>Determines whether the background image scrolls with the content. Values include scroll, fixed, or local.</p>
+        </li>
+    </ul>
+    <h5>you can also do all properties  in a single line by folloeing shorthand properties</h5>
+    <pre class="fw-bold text-danger fs-4">.example {
+        background: #f0f0f0 url('example.jpg') no-repeat center top / cover;
+      }</pre>
+    <h1>border properties in CSS</h1>
+    <p>In CSS, the border property and its related properties are used to create borders around elements. Borders can be applied to various HTML elements like divs, paragraphs, buttons, etc., and they can be styled, colored, and sized according to your design needs.</p>
+    <ul>
+        <li>
+            <h1>border-width</h1>
+            <p>Sets the width of the border. You can specify it in pixels, ems, rems, percentages, or other length units.</p>
+        </li>
+        <li>
+            <h1>bordr-style</h1>
+            <p>Specifies the style of the border. Values can be solid, dashed, dotted, double, groove, ridge, inset, outset, or none.</p>
+        </li>
+        <li>
+            <h1>border-color</h1>
+            <p> Sets the color of the border. You can use color names, hexadecimal values, RGB, or RGBA values.</p>
+        </li>
+        <li>
+            <h1>border-radius</h1>
+            <p>Applies rounded corners to the border. You can use percentages or lengths to specify the radius.</p>
+        </li>
+    </ul>
+    <h5>you can also do all border properties  in a single line by folloeing shorthand properties</h5>
+    <pre class="text-danger fw-bold fs-4">
+        .example {
+            border: 2px dashed #f00;
+            border-radius: 10px;
+          }
+    </pre>
+    <h1>Box model</h1>
+    <p class="fs-4">
+        The box model is a fundamental concept in CSS (Cascading Style Sheets) that defines how elements on a webpage are structured in terms of their dimensions and spacing. It consists of four essential components: content, padding, border, and margin.</p>
+    <ul>
+        <li>
+            <h1>content</h1>
+            <p>This refers to the actual content of the HTML element, such as text, images, videos, etc.</p>
+        </li>
+        <li>
+            <h1>padding</h1>
+            <p> It is the space between the content and the element's border. Padding can be set using properties like padding-top, padding-right, padding-bottom, and padding-left.</p>
+        </li>
+        <li>
+            <h1>border</h1>
+            <p>This is the boundary around the padding. It can have properties like border-width, border-style, and border-color to control its appearance.</p>
+        </li>
+        <li>
+            <h1>margin</h1>
+            <p> Margin is the space outside the element's border. It creates a gap between the element and other elements around it. Properties like margin-top, margin-right, margin-bottom, and margin-left are used to define margins.</p>
+        </li>
+    </ul>
+    <div class="v_container">
+        <div class="v_box">
+          <div class="v_content">Content</div>
+        </div>
+      </div>
+      <h1>Margin</h1>
+      <p>In web design and CSS (Cascading Style Sheets), the "margin" refers to the space around an HTML element, outside its border, separating it from other elements. It creates an outer space or gap between the element and its neighboring elements.</p>
+      <br>
+      <p>The margin property in CSS allows you to control the space outside the border of an element. It can be set for individual sides (top, right, bottom, left) or all sides at once.</p>
+      <br>
+      <h1>padding</h1>
+      <p>In web design and CSS (Cascading Style Sheets), "padding" refers to the space between the content of an HTML element and its border. It provides internal spacing within the element, separating the content from the border.</p>
+      <br>
+      <p>The padding property in CSS allows you to control the space between an element's content and its border. Padding can be set for individual sides (top, right, bottom, left) or for all sides at once.</p>
+      <h1>list properties</h1>
+      <ul title="list style properties">
+          <li>
+           <h1>list style properties</h1>
+            <ul>
+                <li>
+                    <h2>list-style-type</h2>
+                    <p>Sets the type of marker for the list items.
+                        Values: disc, circle, square, decimal, lower-alpha, upper-alpha, lower-roman, upper-roman, none, etc.</p>
+                </li>
+                <li>
+                    <h2>list-style-image:</h2>
+                    <p>Specifies an image as the marker for list items.
+
+                        Example: list-style-image: url('image.png');</p>
+                </li>
+                <li>
+                    <h2>list-style-position</h2>
+                    <p>Defines whether the marker should appear inside or outside the content flow.</p>
+                    <p>Values: inside or outside.
+                    </p>
+                </li>
+            </ul>
+          </li>
+      </ul>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

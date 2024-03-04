@@ -1,0 +1,9 @@
+document.querySelectorAll(".ol_1>li>p").forEach((element)=>{
+  element.classList.add("fs-4")
+})
+document.querySelectorAll(".ul_1>li").forEach(element=>{
+    element.classList.add("fs-4")
+})
+document.querySelectorAll(".isp>p").forEach(element=>{
+    element.classList.add("fs-4")
+})

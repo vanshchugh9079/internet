@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      tr {
+        border: 2px sold green solid;
+      }
+    </style>
+    <title>js notes</title>
+  </head>
+  <body class="container">
+    <h1>introduction to client side scripting</h1>
+    <p>
+      Client-side scripting refers to the execution of scripts or code on the
+      user's web browser, enabling dynamic interactions and modifications within
+      a web page without needing to communicate with the server. It primarily
+      involves using programming languages like JavaScript, HTML, and CSS to
+      enhance the user experience by providing interactivity and responsiveness.
+    </p>
+    <p class="fw-bold">
+      you can also define html ,css and js in exam for client side scripting
+    </p>
+    <h4 class="text-danger">
+      it's essential to consider certain aspects while working with client-side
+      scripting:
+    </h4>
+    <ul>
+      <li>
+        <h1>Browser Compatibility</h1>
+        <p>
+          Different browsers might interpret code differently, so ensuring
+          compatibility across various browsers is crucial.
+        </p>
+      </li>
+      <li>
+        <h1>security</h1>
+        <p>
+          Client-side code is accessible and viewable by users, making it
+          vulnerable to manipulation. Developers need to implement security
+          measures to protect against threats like Cross-Site Scripting (XSS)
+          attacks.
+        </p>
+      </li>
+      <li>
+        <h1>performance</h1>
+        <p>
+          Extensive client-side scripting can affect page load times, especially
+          on slower devices or connections. Optimizing code and minimizing
+          unnecessary operations help improve performance.
+        </p>
+      </li>
+    </ul>
+    <h1>introduction to JavaScript</h1>
+    <p>
+      JavaScript is the most commonly used client-side scripting language. It's
+      a versatile programming language that allows developers to create
+      interactive and dynamic elements on web pages. JavaScript can manipulate
+      HTML and CSS, handle events, validate user input, and make asynchronous
+      requests to servers (AJAX) without refreshing the entire page.
+    </p>
+    <h1>comment in js</h1>
+    <p>
+      a comment is a textual annotation or explanatory note added within the
+      source code of a programming language. Comments are used to document and
+      describe the code, providing information for developers (including the
+      original author or others working on the codebase) without affecting the
+      program's functionality.
+    </p>
+    <h3>two types of comment</h3>
+    <ul>
+      <li>
+        <h1>SINGLE LINE COMMENT</h1>
+        <p>single line comment is denoted by //</p>
+      </li>
+      <li>
+        <h1>multi line comment</h1>
+        <p>multi LINE comment is denoted by /* content of comment */</p>
+      </li>
+    </ul>
+    <h1>varriable on javascript</h1>
+    <p>
+      A variable is like as a container which is used to store a value A
+      vailable is declared in javascript using var let and const
+    </p>
+    <h1>diffrence between var,let ,const</h1>
+    <!-- <table>
+      <thead>
+        <tr>
+          <th>var</th>
+          <th>let</th>
+          <th>const</th>
+        </tr>
+      </thead>
+      <tbody>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+      </tbody>
+    </table> -->
+    <h1>global varriable in javascript</h1>
+    <p>
+      A JavaScript global variable is declared outside the function or declared
+      with window object. It can be accessed from any function.
+    </p>
+    <h4>Declaring JavaScript global variable within function</h4>
+    <p>
+      To declare JavaScript global variables inside function, you need to use
+      window object. For example:
+    </p>
+    <pre class="fs-4 text-danger">
+      function m(){  
+        window.value=100;  declare
+        }  
+        function n(){  
+        alert(window.value);//accessing 
+        }  
+     </pre
+    >
+    <h1>datatype in javascript</h1>
+    <p>
+      Data types in programming languages define the type of data that a
+      variable can hold . javascript is a dynamic typed language so there does
+      note need to define datype of varriable
+    </p>
+    <pre class="fs-4 text-danger">        let a=10;</pre>
+    <h1>types of datatype</h1>
+    <ul>
+      <li>
+        <h1>primitive</h1>
+        <p>
+          Primitive data types in JavaScript are stored directly in memory and
+          have fixed sizes, making them simple and efficient for storing basic
+          values. When you work with primitive data types, they are compared by
+          their actual value.
+        </p>
+        <ul>
+          <li>
+            <h2>Number</h2>
+            <p>this datype is used to store numeric value</p>
+          </li>
+          <li>
+            <h2>NUll</h2>
+            <p>i will define in notebook</p>
+          </li>
+          <li>
+            <h2>String</h2>
+            <p>
+              Represents a sequence of characters enclosed in single (' ') or
+              double (" ")quotes or backtick (``) . Used for storing and
+              manipulating text
+            </p>
+          </li>
+          <li>
+            <h2>symbol</h2>
+            <p>
+              Represents a unique and immutable value used as an identifier for
+              object properties. Symbols are primarily used to prevent property
+              name collisions in objects.
+            </p>
+          </li>
+          <li>
+            <h2>Boolean</h2>
+            <p>
+              Represents a logical value that can be either true or false. Used
+              for logical operations and conditional statements.
+            </p>
+          </li>
+          <li>
+            <h2>BigInt</h2>
+            <p>
+              BigInt is a numeric data type introduced in JavaScript to
+              represent integers of arbitrary length, allowing you to work with
+              numbers beyond the limits of the Number type, which is constrained
+              by the Number.MAX_SAFE_INTEGER and Number.MIN_SAFE_INTEGER values.
+            </p>
+          </li>
+          <li>
+            <h2>undefined</h2>
+            <p>i will explain in notebook</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h1>Non-primitive</h1>
+        <p>
+          In JavaScript, non-primitive data types are more complex data
+          structures that can hold multiple values and are not stored directly
+          in memory. Unlike primitive types, non-primitive or reference types do
+          not contain the actual data directly but rather a reference or pointer
+          to the location in memory where the data is stored.
+        </p>
+        <ul>
+          <li>
+            <h1>Array</h1>
+            <p></p>
+          </li>
+          <li>
+            <h1>Function</h1>
+            <p></p>
+          </li>
+          <li>
+            <h1>Object</h1>
+            <p></p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h1>operator :</h1>
+    <p>Operator is a symbol that is used to perform operation on operands</p>
+    <h1>types of operator</h1>
+    <ul>
+      <li>
+        <h1>arthmetic operator</h1>
+        <p>Arithmetic operator that is used to perform mathematical equation</p>
+      </li>
+      <li>
+        <h1>assignment operator</h1>
+        <p>Assignment operator to assign value to a variable</p>
+      </li>
+      <li>
+        <h1>comparison operator</h1>
+        <p>These operator compared to value and return a boolean as a result</p>
+      </li>
+      <li>
+        <h1>logical</h1>
+        <p>
+          These operator is used to check multiple conditions and return a
+          boolean in result
+        </p>
+      </li>
+      <li>
+        <h1>unary operator</h1>
+        <p>
+          The operator that works on a single apprentice that is called an unary
+          Operator
+        </p>
+      </li>
+      <li>
+        <h1>ternary operator</h1>
+        <p>the operator is used to write if-else statement in a single line</p>
+      </li>
+    </ul>
+    <h5>you can write loop and condition same as java</h5>
+    <h1>popup boxes in js</h1>
+    <p>
+      In JavaScript, alert, prompt, and confirm are methods used to interact
+      with users through dialogue boxes in web applications.
+    </p>
+    <ul>
+      <li>
+        <h1>alert</h1>
+        <p>
+          This method displays a message in a pop-up dialog box with an "OK"
+          button. It is commonly used to provide information or notifications to
+          users. The syntax is:
+        </p>
+        <pre class="fs-4 text-danger">
+          alert("write a messege");
+        </pre>
+        <h4 class="text-primary">example</h4>
+        <pre class="fs-4 text-danger">
+          alert("your account created successfully");
+        </pre>
+      </li>
+      <li>
+        <h1>prompt</h1>
+        <p>
+          This method displays a dialog box prompting the user to input text. It
+          allows you to get input from the user through a text field. The user
+          can type text and either press "OK" to submit the entered text or
+          "Cancel" to dismiss the dialog. The syntax is:
+        </p>
+        <pre class="fs-4 text-danger">
+          let a= prompt("write a text");
+        </pre>
+        <h4 class="text-primary">example</h4>
+        <pre class="fs-4 text-danger">
+          let a= prompt("enter your name");
+          alert("my name is ",a);
+        </pre>
+      </li>
+      <li>
+        <h1>confirm</h1>
+        <p>
+          This method displays a dialog box with a message and two buttons: "OK"
+          and "Cancel." It is used to get user confirmation for an action. It
+          returns a boolean value (true for "OK" and false for "Cancel"). The
+          syntax is:
+        </p>
+        <pre class="fs-4 text-danger">
+var userResponse = confirm("Are you sure you want to proceed?")</pre
+        >
+        <h4 class="text-primary">example</h4>
+        <pre class="fs-4 text-danger">
+            var userResponse = confirm("Do you want to delete this item?");
+            if (userResponse === true) {
+                // Delete the item
+                alert("Item deleted successfully!");
+            } else {
+                // Cancel the delete operation
+                alert("Deletion canceled.");
+            }</pre
+        >
+      </li>
+    </ul>
+    <h1>event in javascript</h1>
+    <p>
+      In JavaScript, an event refers to an action or occurrence that takes place
+      in the browser or within a web page. These events can be triggered by
+      various actions such as user interaction (like clicking a button, hovering
+      over an element, submitting a form), changes in the browser's state (like
+      page load, resizing the window), or by the system (like a timer reaching
+      its interval).
+    </p>
+    <br />
+    <p>
+      Events in JavaScript are used to create interactive web pages by allowing
+      developers to respond to user actions or changes in the environment. They
+      are handled using event listeners or event handlers.
+    </p>
+    <b></b>
+    <h1>event listener</h1>
+    <p class="text-danger">
+      Event listeners are functions that wait for a specific event to occur on a
+      particular HTML element. They "listen" for the event and execute a
+      callback function when that event occurs. The addEventListener() method is
+      commonly used to attach an event listener to an element. For example:
+      javascript
+    </p>
+    <h1>Array</h1>
+    <p>
+      In JavaScript, an array is a data structure used to store a collection of elements. Arrays can hold multiple values of any data type, such as numbers, strings, objects, or even other arrays</p>
+      <h1>Object</h1>
+      <p>In JavaScript, an object is a fundamental data type that allows you to store collections of key-value pairs. Unlike arrays, which use numerical indices to access elements, objects use keys (also called properties) to access their values. Objects can contain various data types as values, such as strings, numbers, arrays, other objects, functions, and more.</p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
